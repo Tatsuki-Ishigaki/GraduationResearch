@@ -1,40 +1,52 @@
 # 再現手順
-・ライブラリをインストール
+## ライブラリをインストール
 
-numpy -> pip install numpy
+numpy
 
-pandas -> pip install pandas
+	$ pip install numpy
 
-matplotlib -> pip install matplotlib
+pandas
+	$ pip install pandas
 
-seaborn -> pip install seaborn
+matplotlib
 
-sklearn -> pip install scikit-learn
+	$ pip install matplotlib
 
-mecab -> brew install mecab mecab-ipadic git curl xz
+seaborn
 
-      -> git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
+	$ pip install seaborn
 
-      -> cd /mecab-ipadic-neologd
+sklearn
 
-      -> sudo ./bin/install-mecab-ipadic-neologd -n -a
+	$ pip install scikit-learn
 
-      -> echo `mecab-config --dicdir`"/mecab-ipadic-neologd" （階層確認コマンド）
+mecab 
+      $ brew install mecab mecab-ipadic git curl xz
 
-fasttext -> git clone https://github.com/facebookresearch/fastText.git
+      $ git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 
-	 -> cd fastText/
+      $ cd /mecab-ipadic-neologd
 
-	 -> make
+      $ sudo ./bin/install-mecab-ipadic-neologd -n -a
 
-	 -> pip install fasttext
+      $ echo `mecab-config --dicdir`"/mecab-ipadic-neologd" （階層確認コマンド）
 
-・学習済みモデルをダウンロード
+fasttext 
+
+	 $ git clone https://github.com/facebookresearch/fastText.git
+
+	 $ cd fastText/
+
+	 $ make
+
+	 $ pip install fasttext
+
+## 学習済みモデルをダウンロード
 
 https://fasttext.cc/docs/en/crawl-vectors.html
 
 -> 下にスクロールして，Japaneseの部分のbinをクリックしダウンロード
 
-・実行
+## 実行
 
-% python3 fthanler.py 
+$ python3 fthanler.py 
