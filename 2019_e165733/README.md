@@ -6,6 +6,7 @@ numpy
 	$ pip install numpy
 
 pandas
+
 	$ pip install pandas
 
 matplotlib
@@ -21,6 +22,7 @@ sklearn
 	$ pip install scikit-learn
 
 mecab 
+
       $ brew install mecab mecab-ipadic git curl xz
 
       $ git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
@@ -49,4 +51,4 @@ https://fasttext.cc/docs/en/crawl-vectors.html
 
 ## 実行
 
-$ python3 fthanler.py 
+	$ python3 fthanler.py 
